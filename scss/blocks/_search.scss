@@ -1,0 +1,37 @@
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 344px;
+    width: 100%;
+
+    border: 0.86px solid var(--search-border-color);
+    border-radius: 42px;
+    background-color: var(--search-bg-color);
+    backdrop-filter: blur(4px);
+
+    &__input {
+        flex: 1;
+        padding-right: 10px;
+        font-weight: 500;
+        caret-color: var(--accent);
+
+        &::placeholder {
+            font-size: 18px;
+            line-height: 1.5;
+            color: var(--white-muted);
+        }
+    }
+
+    &__btn {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+        background-color: var(--accent);
+    }
+
+    &__icon {
+    }
+}
