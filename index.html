@@ -20,20 +20,30 @@
     <header class="header">
         <div class="container">
 
-            <nav class="nav">
-                <a class="logo" href="#!">Panto</a>
+            <nav class="header__nav nav">
+                <a class="nav__logo logo" href="#!">Panto</a>
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a href="#!" class="nav__list-link">Furniture</a></li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link nav__list-link--dropdown" href="#!">Furniture</a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Chair</a></li>
+                            <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Sofa</a></li>
+                            <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Lamp</a></li>
+                            <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Table</a></li>
+                        </ul>
+                    </li>
                     <li class="nav__list-item"><a href="#!" class="nav__list-link">Shop</a></li>
                     <li class="nav__list-item"><a href="#!" class="nav__list-link">About Us</a></li>
                     <li class="nav__list-item"><a href="#!" class="nav__list-link">Contact</a></li>
                 </ul>
+
+                <button class="nav__cart cart">
+                    <img class="cart__img" src="./img/icons/cart.svg" alt="cart">
+                    <div class="cart__couter">0</div>
+                </button>
             </nav>
 
-            <button class="cart">
-                <img class="cart__img" src="./img/icons/cart.svg" alt="cart">
-                <div class="cart__couter">0</div>
-            </button>
+
 
         </div>
     </header>

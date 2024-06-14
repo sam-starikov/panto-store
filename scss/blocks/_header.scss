@@ -1,0 +1,12 @@
+.header {
+    color: var(--header-text-color);
+
+    background-image: url('./../img/header/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1440/1084;
+
+    &__nav {
+        padding-top: 40px;
+    }
+}
