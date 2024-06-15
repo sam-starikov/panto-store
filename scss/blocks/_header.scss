@@ -4,7 +4,7 @@
     color: var(--header-text-color);
 
     background-image: url('./../img/header/header-bg.jpg');
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     aspect-ratio: 1440/1084;
 
@@ -42,17 +42,32 @@
         padding: 8px 8px 8px 20px;
     }
 
-    &__dot-info {
+    &__dot-vase {
         position: absolute;
-        &-vase {
-            top: 754px;
-            left: 113px;
-        }
-        &-sofa {
-        }
-        &-statue {
-        }
-        &-wall {
-        }
+        top: 743px;
+        left: 103px;
+    }
+
+    &__dot-sofa {
+        position: absolute;
+        top: 666px;
+        left: 277px;
+    }
+    &__dot-statue {
+        position: absolute;
+        top: 777px;
+        right: 608px;
+    }
+    &__dot-wall {
+        position: absolute;
+        top: 809px;
+        right: 34px;
+    }
+
+    &__tooltip {
+        position: absolute;
+        left: 50%;
+        top: -26px;
+        transform: translate(-50%, -100%);
     }
 }

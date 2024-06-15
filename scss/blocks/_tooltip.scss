@@ -1,0 +1,54 @@
+.tooltip {
+    display: none;
+    visibility: hidden;
+
+    width: 112px;
+    height: 56px;
+    padding-top: 12px;
+
+    background-image: url('./../img/icons/tootip.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &--active {
+        display: flex !important;
+        justify-content: center;
+        gap: 8px;
+
+        visibility: visible;
+    }
+
+    &__checkbox {
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+
+        &:checked + .tooltip__fake-checkbox {
+            background-image: url('./../../img/icons/check.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__fake-checkbox {
+        width: 24px;
+        height: 24px;
+
+        outline: 2px solid var(--white-color);
+        border-radius: 50%;
+
+        &--orange {
+            background-color: var(--ui-orange-color);
+        }
+        &--aquamarine {
+            background-color: var(--ui-aquamarine-color);
+        }
+        &--grey {
+            background-color: var(--ui-grey-color);
+        }
+    }
+}
