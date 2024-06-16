@@ -123,6 +123,8 @@ legend {
   --header-text-color: #ffffff;
   --search-border-color: rgba(255, 255, 255, 0.6);
   --search-bg-color: rgba(255, 255, 255, 0.15);
+  --products-bg: #f7f7f7;
+  --tabs-bg: #eeeeee;
   --footer-bg: #2d2f33;
   --card-bg: #fafafa;
   --dot-border-color: rgba(255, 255, 255, 0.6);
@@ -537,13 +539,37 @@ a {
   line-height: 1.85;
   color: var(--text-color-muted);
 }
+.products {
+  background-color: var(--products-bg);
+}
 .products__content {
   padding: 50px 0;
 }
+.products__title {
+  font-weight: 700;
+  font-size: clamp(22px, 1.018rem + 1.79vw, 42px);
+  margin-bottom: 42px;
+}
+.tabs {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 44px;
+  background-color: var(--tabs-bg);
+}
+.tabs__btn {
+  padding: 7px 20px;
+  border-radius: 32px;
+}
+.tabs__btn--active {
+  background-color: var(--white-color);
+}
+
 .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   gap: 13px;
   -webkit-box-align: center;
       -ms-flex-align: center;

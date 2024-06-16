@@ -1,4 +1,14 @@
 .tabs {
+    display: inline-flex;
+    padding: 8px;
+    border-radius: 44px;
+    background-color: var(--tabs-bg);
     &__btn {
+        padding: 7px 20px;
+        border-radius: 32px;
+
+        &--active {
+            background-color: var(--white-color);
+        }
     }
 }
