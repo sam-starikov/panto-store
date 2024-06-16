@@ -219,14 +219,6 @@ a {
   top: 809px;
   right: 34px;
 }
-.header__tooltip {
-  position: absolute;
-  left: 50%;
-  top: -26px;
-  -webkit-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
-}
-
 .logo {
   font-size: 28px;
   font-weight: 700;
@@ -429,6 +421,13 @@ a {
   -webkit-animation: pulse 1.5s infinite alternate paused;
           animation: pulse 1.5s infinite alternate paused;
 }
+.dot-info__tooltip {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -461,9 +460,9 @@ a {
   background-repeat: no-repeat;
 }
 .tooltip--active {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
