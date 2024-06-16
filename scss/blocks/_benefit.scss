@@ -1,0 +1,27 @@
+.benefit {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin-bottom: 20px;
+
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--text-color);
+    }
+
+    &__text {
+        flex-grow: 1;
+        margin-bottom: 14px;
+
+        font-size: 18px;
+        line-height: 1.85;
+        color: var(--text-color-muted);
+    }
+
+    &__link {
+    }
+
+    &__img {
+    }
+}

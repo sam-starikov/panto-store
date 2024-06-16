@@ -1,0 +1,20 @@
+.details {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--accent);
+    text-transform: capitalize;
+
+    &--large {
+        font-size: 18px;
+    }
+
+    &::after {
+        content: url('./../img/icons/arrow-right.svg');
+        height: 24px;
+    }
+}
