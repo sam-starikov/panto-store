@@ -1,6 +1,6 @@
 .details {
     display: inline-flex;
-    gap: 13px;
+    gap: 5px;
     align-items: center;
 
     font-size: 14px;
@@ -9,6 +9,8 @@
     color: var(--accent);
     text-transform: capitalize;
 
+    // animation: pulse infinite alternate 0.5s ease-in-out;
+
     &--large {
         font-size: 18px;
     }
@@ -16,5 +18,15 @@
     &::after {
         content: url('./../img/icons/arrow-right.svg');
         height: 24px;
+        animation: flat infinite alternate 1.5s ease-in-out;
+
+        @keyframes flat {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(50%);
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@
     }
 
     &__img {
+        user-select: none;
         margin-top: -50px;
     }
 
@@ -59,8 +60,14 @@
         border-radius: 50%;
         background-color: var(--ui-darkblue-color);
 
+        transition: background-color 0.1s ease-in;
+
         &::after {
             content: url('./../img/icons/plus.svg');
+        }
+
+        &:hover {
+            background-color: var(--accent);
         }
     }
 }
