@@ -1,28 +1,66 @@
 .card {
+    width: 268px;
+    font-family: var(--font-card);
+
     &__link {
+        display: block;
+        text-align: center;
+        height: 239px;
+
+        border-radius: 20px 20px 0 0;
+        background-color: var(--card-bg);
     }
 
     &__img {
+        margin-top: -50px;
     }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 14px 21px 27.5px 21px;
+
+        border-radius: 0 0 20px 20px;
+        background-color: var(--white-color);
     }
 
     &__type {
+        font-size: 17px;
+        color: var(--ui-lightgrey-color);
     }
 
     &__title {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--ui-darkblue-color);
     }
 
     &__rate {
     }
 
     &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__price {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--ui-darkblue-color);
     }
 
     &__buy {
+        width: 49px;
+        height: 49px;
+        padding: 12px;
+
+        border-radius: 50%;
+        background-color: var(--ui-darkblue-color);
+
+        &::after {
+            content: url('./../img/icons/plus.svg');
+        }
     }
 }

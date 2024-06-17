@@ -7,8 +7,15 @@
         padding: 7px 20px;
         border-radius: 32px;
 
+        &:hover {
+            background-color: var(--white-half-transparent);
+        }
+
         &--active {
             background-color: var(--white-color);
+            &:focus {
+                background-color: var(--white-color);
+            }
         }
     }
 }
