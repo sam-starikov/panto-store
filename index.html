@@ -21,7 +21,7 @@
     <header class="header none">
         <div class="container">
             <nav class="header__nav nav">
-                <a class="nav__logo logo" href="#!">Panto</a>
+                <a class="logo" href="#!">Panto</a>
                 <ul class="nav__list">
                     <li class="nav__list-item">
                         <a class="nav__list-link nav__list-link--dropdown" href="#!">Furniture</a>
@@ -183,10 +183,9 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products none">
             <div class="container">
                 <div class="products__content">
-
                     <h2 class="products__title">Best Selling Product</h2>
                     <div class="products__tabs">
                         <div class=" tabs">
@@ -197,11 +196,9 @@
                         </div>
                     </div>
 
-
                     <div class="products__slider slider">
                         <div class="swiper">
                             <div class="swiper-wrapper">
-
                                 <article class="products__card card swiper-slide">
                                     <a class="card__link" href="#!">
                                         <img class="card__img" src="./img/products/chair-01.svg" alt="chair">
@@ -283,7 +280,6 @@
                                     </div>
                                 </article>
                             </div>
-
                             <div class="swiper-pagination"></div>
                         </div>
                         <button class="slider__btn-prev">
@@ -293,19 +289,52 @@
                             <img src="./img/icons/arrow-slider-right.svg" alt="next">
                         </button>
                     </div>
+
                     <div class="products__details">
                         <a class="details details--large" href="#!">View All</a>
                     </div>
                 </div>
-
-
             </div>
         </section>
-
-
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container container--small">
+            <div class="footer__columns">
+                <div class="footer__desc">
+                    <a class="footer__logo logo" href="#!">Panto</a>
+                    <p class="footer__text">
+                        The advantage of hiring a workspace with us is that givees you comfortable service and
+                        all-around facilities.
+                    </p>
+                </div>
+                <nav class="footer__nav">
+                    <h3 class="footer__nav-title">Services</h3>
+                    <ul class="footer__nav-list">
+                        <li><a href="#!">Email Marketing</a></li>
+                        <li><a href="#!">Campaigns</a></li>
+                        <li><a href="#!">Branding</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <h3 class="footer__nav-title">Furniture</h3>
+                    <ul class="footer__nav-list">
+                        <li><a href="#!">Beds</a></li>
+                        <li><a href="#!">Chair</a></li>
+                        <li><a href="#!">All</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__row">
+                <p>Copyright © 2021</p>
+                <div class="footer__agreement">
+                    <a href="#!">Terms & Conditions</a>
+                    <a href="#!">Privacy Policy</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>

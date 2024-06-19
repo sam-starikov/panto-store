@@ -12,6 +12,10 @@ a {
     max-width: 1310px;
     margin: 0 auto;
     padding: 0 15px;
+
+    &--small {
+        max-width: 1094px;
+    }
 }
 
 .none {
