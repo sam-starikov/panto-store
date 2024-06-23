@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header none">
+    <header class="header">
         <div class="container">
             <nav class="header__nav nav">
                 <a class="logo" href="#!">Panto</a>
@@ -27,7 +27,7 @@
                         <a class="nav__list-link nav__list-link--dropdown" href="#!">Furniture</a>
                         <ul class="nav__dropdown">
                             <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Chair</a></li>
-                            <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Sofa</a></li>
+                            <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">lamp</a></li>
                             <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Lamp</a></li>
                             <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Table</a></li>
                         </ul>
@@ -150,7 +150,7 @@
     </header>
 
     <main>
-        <section class="benefits none">
+        <section class="benefits">
             <div class="container">
                 <div class="benefits__content">
                     <h2 class="benefits__title">Why Choosing Us</h2>
@@ -183,25 +183,25 @@
             </div>
         </section>
 
-        <section class="products none">
+        <section class="products">
             <div class="container">
                 <div class="products__content">
                     <h2 class="products__title">Best Selling Product</h2>
                     <div class="products__tabs">
                         <div class=" tabs">
-                            <button class="tabs__btn tabs__btn--active">Chair</button>
-                            <button class="tabs__btn">Beds</button>
-                            <button class="tabs__btn">Sofa</button>
-                            <button class="tabs__btn">Lamp</button>
+                            <button class="tabs__btn tabs__btn--active" data-tab="chair">Chair</button>
+                            <button class="tabs__btn" data-tab="beds">Beds</button>
+                            <button class="tabs__btn" data-tab="sofa">Sofa</button>
+                            <button class="tabs__btn" data-tab="lamp">Lamp</button>
                         </div>
                     </div>
 
                     <div class="products__slider slider">
                         <div class="swiper">
                             <div class="swiper-wrapper">
-                                <article class="products__card card swiper-slide">
+                                <article class="products__card card swiper-slide" data-tab-value="chair">
                                     <a class="card__link" href="#!">
-                                        <img class="card__img" src="./img/products/chair-01.svg" alt="chair">
+                                        <img class="card__img" src="./img/products/chair/chair-01.svg" alt="chair">
                                     </a>
                                     <div class="card__info">
                                         <span class="card__type">Chair</span>
@@ -215,9 +215,9 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="products__card card swiper-slide">
+                                <article class="products__card card swiper-slide" data-tab-value="chair">
                                     <a class="card__link" href="#!">
-                                        <img class="card__img" src="./img/products/chair-02.svg" alt="chair">
+                                        <img class="card__img" src="./img/products/chair/chair-02.svg" alt="chair">
                                     </a>
                                     <div class="card__info">
                                         <span class="card__type">Chair</span>
@@ -231,9 +231,9 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="products__card card swiper-slide">
+                                <article class="products__card card swiper-slide" data-tab-value="chair">
                                     <a class="card__link" href="#!">
-                                        <img class="card__img" src="./img/products/chair-03.svg" alt="chair">
+                                        <img class="card__img" src="./img/products/chair/chair-03.png" alt="chair">
                                     </a>
                                     <div class="card__info">
                                         <span class="card__type">Chair</span>
@@ -247,9 +247,9 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="products__card card swiper-slide">
+                                <article class="products__card card swiper-slide" data-tab-value="chair">
                                     <a class="card__link" href="#!">
-                                        <img class="card__img" src="./img/products/chair-04.svg" alt="chair">
+                                        <img class="card__img" src="./img/products/chair/chair-04.png" alt="chair">
                                     </a>
                                     <div class="card__info">
                                         <span class="card__type">Chair</span>
@@ -263,12 +263,14 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="products__card card swiper-slide">
+
+
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
                                     <a class="card__link" href="#!">
-                                        <!-- <img class="card__img" src="./img/products/bed-01.webp" alt="chair"> -->
+                                        <img class="card__img" src="./img/products/lamp/lamp-01.png" alt="lamp">
                                     </a>
                                     <div class="card__info">
-                                        <span class="card__type">Chair</span>
+                                        <span class="card__type">Lamp</span>
                                         <h3 class="card__title">Sakarias Armchair</h3>
                                         <div class="card__rate">
                                             <img src="./img/icons/star.svg" alt="star">
@@ -279,6 +281,377 @@
                                         </div>
                                     </div>
                                 </article>
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/lamp/lamp-02.png" alt="lamp">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Lamp</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/lamp/lamp-03.png" alt="lamp">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Lamp</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/lamp/lamp-04.png" alt="lamp">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Lamp</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/lamp/lamp-05.png" alt="lamp">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Lamp</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/lamp/lamp-06.png" alt="lamp">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Lamp</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/lamp/lamp-07.png" alt="lamp">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Lamp</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="lamp">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/lamp/lamp-08.png" alt="lamp">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Lamp</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-01.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-02.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-03.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-04.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-05.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-06.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-07.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="beds">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/bed/bed-08.png" alt="bed">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Bed</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-01.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-02.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-03.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-04.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-05.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-06.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-07.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="products__card card swiper-slide" data-tab-value="sofa">
+                                    <a class="card__link" href="#!">
+                                        <img class="card__img" src="./img/products/sofa/sofa-08.png" alt="sofa">
+                                    </a>
+                                    <div class="card__info">
+                                        <span class="card__type">Sofa</span>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__rate">
+                                            <img src="./img/icons/star.svg" alt="star">
+                                        </div>
+                                        <div class="card__controls">
+                                            <span class="card__price">$ 350</span>
+                                            <button class="card__buy"></button>
+                                        </div>
+                                    </div>
+                                </article>
+
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>

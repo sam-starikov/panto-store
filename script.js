@@ -29,20 +29,6 @@ const stopPropagation = e => {
 }
 /* end */
 
-/* tabs */
-const tabsBtn = document.querySelectorAll('.tabs__btn')
-
-// Уст. активный tab
-for (const tab of tabsBtn) {
-    tab.addEventListener('click', e => {
-        for (const tab of tabsBtn) {
-            tab.classList.remove('tabs__btn--active')
-        }
-        e.target.classList.add('tabs__btn--active')
-    })
-}
-/* end */
-
 /* swiper */
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -67,3 +53,43 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 })
+/* end */
+
+/* tabs */
+const tabsBtn = document.querySelectorAll('[data-tab]')
+const dataProducts = document.querySelectorAll('[data-tab-value]')
+
+// Уст. активный tab
+for (const tab of tabsBtn) {
+    if (tab.dataset.tab === 'chair') {
+        for (const product of dataProducts) {
+            if (product.dataset.tabValue === 'chair') {
+                product.classList.remove('none')
+            } else {
+                product.classList.add('none')
+            }
+        }
+    }
+
+    tab.addEventListener('click', e => {
+        for (const tab of tabsBtn) {
+            tab.classList.remove('tabs__btn--active')
+        }
+        e.target.classList.add('tabs__btn--active')
+
+        for (product of dataProducts) {
+            if (tab.dataset.tab === product.dataset.tabValue) {
+                product.classList.remove('none')
+            } else {
+                product.classList.add('none')
+            }
+        }
+        swiper.update()
+    })
+}
+
+/* end */
+
+// swiper.updateSlides()
+// swiper.updateProgress()
+// swiper.updateSlidesClasses()
