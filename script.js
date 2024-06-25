@@ -31,24 +31,20 @@ const stopPropagation = e => {
 
 /* swiper */
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
     slidesPerView: 3,
     spaceBetween: 42,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.slider__btn-next',
         prevEl: '.slider__btn-prev',
     },
 
-    // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
     },
@@ -90,6 +86,30 @@ for (const tab of tabsBtn) {
 
 /* end */
 
-// swiper.updateSlides()
-// swiper.updateProgress()
-// swiper.updateSlidesClasses()
+/* mobile nav */
+const mobileNav = document.querySelector('.mobile-nav')
+const openMobileMenuBtn = document.querySelector('.nav__menu-btn')
+const closeMobileMenuBtn = document.querySelector('.mobile-nav__btn-close')
+
+const openDropDownBtn = document.querySelector('.mobile-nav__dropdown-btn')
+const mobileDropdown = document.querySelector('.mobile-nav__dropdown')
+const dropDownList = document.querySelector('.mobile-nav__dropdown-list')
+
+openDropDownBtn.addEventListener('click', function () {
+    const isOpen = this.classList.toggle('mobile-nav__btn--active')
+    dropDownList.classList.toggle('mobile-nav__dropdown-list--open')
+
+    if (isOpen) {
+        mobileDropdown.style.maxHeight = mobileDropdown.scrollHeight + 'px'
+    } else {
+        mobileDropdown.style.maxHeight = '0px'
+    }
+})
+
+closeMobileMenuBtn.addEventListener('click', function () {
+    mobileNav.classList.remove('mobile-nav--open')
+})
+
+openMobileMenuBtn.addEventListener('click', function () {
+    mobileNav.classList.add('mobile-nav--open')
+})

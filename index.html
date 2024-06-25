@@ -20,11 +20,12 @@
 <body>
     <header class="header">
         <div class="container">
+
             <nav class="header__nav nav">
                 <a class="logo" href="#!">Panto</a>
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a class="nav__list-link nav__list-link--dropdown" href="#!">Furniture</a>
+                        <button class="nav__list-btn nav__list-btn--dropdown" href="#!">Furniture</button>
                         <ul class="nav__dropdown">
                             <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">Chair</a></li>
                             <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#!">lamp</a></li>
@@ -36,14 +37,16 @@
                     <li class="nav__list-item"><a href="#!" class="nav__list-link">About Us</a></li>
                     <li class="nav__list-item"><a href="#!" class="nav__list-link">Contact</a></li>
                 </ul>
-
                 <button class="nav__cart cart">
                     <img class="cart__img" src="./img/icons/cart.svg" alt="cart">
                     <div class="cart__couter">0</div>
                 </button>
+                <button class="nav__menu-btn">
+                    <img src="./img/icons/burger.svg" alt="Open menu">
+                </button>
             </nav>
 
-            <div class="header__body">
+            <div class="header__body none">
                 <h1 class="header__title">
                     Make your interior more
                     minimalistic & modern
@@ -62,7 +65,7 @@
                 </form>
             </div>
 
-            <div class="header__dot-vase">
+            <div class="header__dot-vase none">
                 <button class="dot-info">
                     <div class="dot-info__center"></div>
                     <div class="dot-info__radius"></div>
@@ -84,7 +87,7 @@
 
             </div>
 
-            <div class="header__dot-sofa">
+            <div class="header__dot-sofa none">
                 <button class="dot-info">
                     <div class="dot-info__center"></div>
                     <div class="dot-info__radius"></div>
@@ -105,7 +108,7 @@
                 </button>
             </div>
 
-            <div class="header__dot-statue">
+            <div class="header__dot-statue none">
                 <button class="dot-info">
                     <div class="dot-info__center"></div>
                     <div class="dot-info__radius"></div>
@@ -126,7 +129,7 @@
                 </button>
             </div>
 
-            <div class="header__dot-wall">
+            <div class="header__dot-wall none">
                 <button class="dot-info">
                     <div class="dot-info__center"></div>
                     <div class="dot-info__radius"></div>
@@ -149,8 +152,46 @@
         </div>
     </header>
 
+    <nav class="mobile-nav">
+        <div class="mobile-nav__controls">
+            <button class="cart">
+                <img class="cart__img" src="./img/icons/cart.svg" alt="cart">
+                <div class="cart__couter">0</div>
+            </button>
+            <button class="mobile-nav__btn-close">
+                <img src="./img/icons/close.svg" alt="Close menu">
+            </button>
+        </div>
+
+        <ul class="mobile-nav__list">
+
+            <li class="mobile-nav__list-item">
+                <button class="mobile-nav__dropdown-btn" href="#!">Furniture</button>
+                <div class="mobile-nav__dropdown">
+                    <ul class="mobile-nav__dropdown-list">
+                        <li class="mobile-nav__dropdown-item"><a class="mobile-nav__dropdown-link" href="#!">Chair</a>
+                        </li>
+                        <li class="mobile-nav__dropdown-item"><a class="mobile-nav__dropdown-link" href="#!">Sofa</a>
+                        </li>
+                        <li class="mobile-nav__dropdown-item"><a class="mobile-nav__dropdown-link" href="#!">Lamp</a>
+                        </li>
+                        <li class="mobile-nav__dropdown-item"><a class="mobile-nav__dropdown-link" href="#!">Table</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+
+
+
+            <li class="mobile-nav__list-item"><a href="#!" class="mobile-nav__list-link">Shop</a></li>
+            <li class="mobile-nav__list-item"><a href="#!" class="mobile-nav__list-link">About Us</a></li>
+            <li class="mobile-nav__list-item"><a href="#!" class="mobile-nav__list-link">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="benefits">
+        <section class="benefits none">
             <div class="container">
                 <div class="benefits__content">
                     <h2 class="benefits__title">Why Choosing Us</h2>
@@ -183,7 +224,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products none">
             <div class="container">
                 <div class="products__content">
                     <h2 class="products__title">Best Selling Product</h2>
@@ -671,7 +712,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer none">
         <div class="container container--small">
             <div class="footer__columns">
                 <div class="footer__desc">

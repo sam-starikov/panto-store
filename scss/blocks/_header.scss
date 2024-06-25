@@ -3,17 +3,19 @@
 
     color: var(--header-text-color);
 
-    background-color: black;
-    // background-image: url('./../img/header/header-bg.jpg');
+    // background-color: black;
+    background-image: url('./../img/header/header-bg.jpg');
 
     background-position: center center;
+    background-size: contain;
     background-repeat: no-repeat;
-    aspect-ratio: 1920/1080;
+    aspect-ratio: 1440/1084;
 
     &__nav {
         padding-top: 40px;
         margin-bottom: 92px;
     }
+
     &__body {
         display: flex;
         flex-direction: column;
@@ -46,24 +48,24 @@
 
     &__dot-vase {
         position: absolute;
-        top: 743px;
-        left: 103px;
+        top: calc(743 * 100% / 1084);
+        left: calc(103 * 100% / 1440);
     }
 
     &__dot-sofa {
         position: absolute;
-        top: 666px;
-        left: 277px;
+        top: calc(666 * 100% / 1084);
+        left: calc(277 * 100% / 1440);
     }
     &__dot-statue {
         position: absolute;
-        top: 777px;
-        right: 608px;
+        top: calc(777 * 100% / 1084);
+        right: calc(608 * 100% / 1440);
     }
     &__dot-wall {
         position: absolute;
-        top: 809px;
-        right: 34px;
+        top: calc(809 * 100% / 1084);
+        right: calc(34 * 100% / 1440);
     }
 
     &__tooltip {

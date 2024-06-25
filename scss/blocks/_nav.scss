@@ -1,8 +1,13 @@
 .nav {
     display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 2fr 9fr 2fr;
     align-items: center;
     gap: 20px;
+
+    @include tablet() {
+        grid-template-columns: 10fr auto auto;
+        gap: 40px;
+    }
 
     &__list {
         display: flex;
@@ -13,12 +18,22 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 1.5;
+
+        @include tablet() {
+            display: none;
+        }
     }
 
     &__list-item {
         position: relative;
         padding-bottom: 20px;
         margin-bottom: -20px;
+
+        transition: opacity 0.1s ease-in;
+
+        &:hover {
+            opacity: 0.8;
+        }
 
         & .nav__dropdown {
             transition: opacity 0.1s ease-in;
@@ -30,7 +45,7 @@
         }
     }
 
-    &__list-link {
+    &__list-btn {
         transition: opacity 0.1s ease-in;
 
         &:hover {
@@ -65,7 +80,7 @@
         font-size: 16px;
 
         border-radius: 15px;
-        background-color: var(--ui-grey-color);
+        background-color: var(--mobile-menu-bg);
 
         opacity: 0;
         visibility: hidden;
@@ -84,5 +99,13 @@
 
     &__cart {
         justify-self: end;
+    }
+
+    &__menu-btn {
+        display: none;
+
+        @include tablet() {
+            display: block;
+        }
     }
 }
