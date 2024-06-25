@@ -1,5 +1,5 @@
 .footer {
-    padding: 118px 56px;
+    padding: clamp(50px, 1.911rem + 6.07vw, 118px) 0 clamp(20px, 0.607rem + 3.21vw, 56px);
 
     color: var(--white-muted);
     background-color: var(--footer-bg);
@@ -10,13 +10,29 @@
         gap: 20px;
 
         margin-bottom: 118px;
+
+        @include tablet {
+            grid-template-columns: 4fr 1fr 3fr 3fr;
+        }
+
+        @include mobile-xl {
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 60px;
+        }
     }
 
     &__desc {
+        @include mobile-xl {
+            grid-column: 1/3;
+        }
     }
 
     &__logo {
         margin-bottom: 30px;
+
+        @include mobile-l {
+            margin-bottom: 15px;
+        }
     }
 
     &__text {
@@ -27,6 +43,9 @@
     &__nav {
         &:nth-child(2) {
             grid-column-start: 3;
+            @include mobile-xl {
+                grid-column-start: auto;
+            }
         }
     }
 
@@ -52,6 +71,12 @@
         color: var(--white-half-transparent);
         font-size: 15px;
         letter-spacing: -0.2px;
+
+        @include mobile-xl {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 10px;
+        }
     }
 
     &__agreement {

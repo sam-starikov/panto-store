@@ -33,7 +33,7 @@ const stopPropagation = e => {
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     // loop: true,
-    slidesPerView: 3,
+    // slidesPerView: 1,
     spaceBetween: 42,
 
     pagination: {
@@ -47,6 +47,26 @@ const swiper = new Swiper('.swiper', {
 
     scrollbar: {
         el: '.swiper-scrollbar',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+
+        430: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        630: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 42,
+        },
     },
 })
 /* end */
@@ -113,3 +133,4 @@ closeMobileMenuBtn.addEventListener('click', function () {
 openMobileMenuBtn.addEventListener('click', function () {
     mobileNav.classList.add('mobile-nav--open')
 })
+/* end */

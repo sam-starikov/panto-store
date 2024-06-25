@@ -1,7 +1,7 @@
 .products {
     background-color: var(--products-bg);
     &__content {
-        padding: 50px 0;
+        padding: clamp(25px, 1.116rem + 2.23vw, 50px) 0;
     }
 
     &__title {
@@ -12,7 +12,7 @@
     }
 
     &__tabs {
-        margin-bottom: 80px;
+        margin-bottom: clamp(40px, 1.786rem + 3.57vw, 80px);
     }
 
     &__slider {

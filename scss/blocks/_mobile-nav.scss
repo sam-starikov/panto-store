@@ -1,11 +1,11 @@
 .mobile-nav {
-    // display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: 10;
 
-    width: 320px;
+    width: 100%;
     padding: 30px 30px;
 
     font-size: 20px;
